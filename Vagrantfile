@@ -72,10 +72,10 @@ Vagrant.configure("2") do |config|
   # path, and data_bags path (all relative to this Vagrantfile), and adding
   # some recipes and/or roles.
   #
-   config.vm.provision :chef_solo do |chef|
-     chef.cookbooks_path = ["cookbooks","site-cookbooks"]
-     chef.add_recipe "my-first-server"
-   end
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["cookbooks","site-cookbooks"]
+    chef.add_recipe "my-first-server"
+  end
 
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).
